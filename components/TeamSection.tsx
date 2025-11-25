@@ -10,16 +10,16 @@ const team = [
     role: "CEO / Founder",
     bio: "Anupama founded AV Academy with one mission to guide students, nurture their talent, and help them build strong careers in the digital and creative industries.",
     image: "/anupama.png",
-    linkedin: "https://www.linkedin.com/in/virendra-singh",
-    portfolio: "https://virendrasingh.com",
+    linkedin: "https://www.linkedin.com/in",
+    portfolio: "https://example.com",
   },
   {
     name: "Mr. Virendra",
     role: "Director",
     bio: "Virendra, the Director of AV Academy, brings deep expertise in Video Editing and VFX mentoring students to craft high-impact visuals and develop professional storytelling skills.",
     image: "/virendra.png",
-    linkedin: "https://www.linkedin.com/in/shubham-sharma/",
-    portfolio: "https://shubhamsharma.dev",
+    linkedin: "https://www.linkedin.com/in//",
+    portfolio: "https://example.com",
   },
   {
     name: "Mr. Shubham",
@@ -27,7 +27,7 @@ const team = [
     bio: "Shubham is the backbone of our tech team a Senior Software Engineer with 13 years of experience and a mentor who teaches technical courses and digital marketing with unmatched clarity and real-world skill.",
     image: "/shubham.png",
     linkedin: "https://www.linkedin.com/in/shubham-kumar-69958232a",
-    portfolio: "https://behance.net/dheeraj",
+    portfolio: "https://example.com",
   },
   {
     name: "Mr. Swapnil",
@@ -45,7 +45,7 @@ export default function TeamSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-start justify-between mb-8">
           <div>
-            <span className="inline-block bg-[#48F4DC] text-[14px] px-3 py-1 rounded-full font-medium text-black mb-3">
+            <span className="inline-block bg-[#2fdfc7] text-[14px] px-3 py-1 rounded-full font-medium text-black mb-3">
               Who you work with
             </span>
             <h2 className="text-3xl md:text-4xl text-gray-900">
@@ -98,7 +98,7 @@ export default function TeamSection() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 bg-[#48F4DC] text-black px-2 py-1 rounded-full text-sm hover:bg-[#33d6c1] transition"
+                      className="inline-flex items-center gap-2 bg-[#2fdfc7] text-black px-2 py-1 rounded-full text-sm hover:bg-[#33d6c1] transition"
                       aria-label={`${member.name} on LinkedIn`}
                     >
                       <LinkedInIcon fontSize="small" />
@@ -109,7 +109,7 @@ export default function TeamSection() {
                       href={member.portfolio}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 bg-[#48F4DC] text-black px-2 py-1 rounded-full text-sm hover:bg-[#33d6c1] transition"
+                      className="inline-flex items-center gap-2 bg-[#2fdfc7] text-black px-2 py-1 rounded-full text-sm hover:bg-[#33d6c1] transition"
                       aria-label={`${member.name} portfolio`}
                     >
                       <AssignmentIndIcon fontSize="small" />

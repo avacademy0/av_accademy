@@ -43,7 +43,7 @@ export default function FAQSection() {
     <section className="bg-white/60 rounded-[28px] p-8 md:p-12 lg:p-16 max-w-5xl mx-auto">
       {/* Small badge + heading */}
       <div className="text-center mb-8">
-        <span className="inline-block bg-[#48F4DC] text-[14px] md:text-xs px-3 py-1 rounded-full font-medium text-black mb-3">
+        <span className="inline-block bg-[#2fdfc7] text-[14px] md:text-xs px-3 py-1 rounded-full font-medium text-black mb-3">
           Student FAQs
         </span>
 
@@ -73,7 +73,7 @@ export default function FAQSection() {
 
                 {/* small lime circle with + / - */}
                 <span
-                  className="ml-4 inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#48F4DC] text-black"
+                  className="ml-4 inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#2fdfc7] text-black"
                   aria-hidden
                 >
                   {isOpen ? <Minus size={14} /> : <Plus size={14} />}
@@ -97,7 +97,7 @@ export default function FAQSection() {
 
       {/* CTA */}
       <div className="mt-8 md:mt-10">
-        <div className="bg-[#48F4DC] rounded-[20px] p-6 md:p-8 text-center">
+        <div className="bg-[#2fdfc7] rounded-[20px] p-6 md:p-8 text-center">
           <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-1">
             Still unsure which course fits you?
           </h3>

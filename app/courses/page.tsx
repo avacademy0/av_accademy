@@ -17,7 +17,7 @@ const nonItCourses = [
   },
   {
     id: "vfx-suite",
-    title: "VFX & Motion Suite",
+    title: "VFX ",
     short:
       "Compositing, motion graphics, finishing and studio workflows used to ship professional reels.",
     tags: ["Motion", "VFX"],
@@ -26,7 +26,7 @@ const nonItCourses = [
   },
   {
     id: "2d-graphics",
-    title: "2D Graphics & Designing",
+    title: "2D Animation & Designing",
     short:
       "Master illustration, layout design, color theory, typography, and digital drawing to create professional 2D artworks and brand assets.",
     tags: ["2D", "Design"],
@@ -35,7 +35,7 @@ const nonItCourses = [
   },
   {
     id: "3d-graphics",
-    title: "3D Graphics & Animation",
+    title: "3D Animation & Game Development",
     short:
       "Modeling, lighting, texturing and animation with real client-style projects and mentor reviews.",
     tags: ["3D", "CG"],
@@ -53,7 +53,7 @@ const nonItCourses = [
   },
   {
     id: "graphic-design",
-    title: "Graphic Design & Branding",
+    title: "Graphic Design",
     short:
       "Design fundamentals, brand systems and campaign production that help you lead creative projects.",
     tags: ["Design", "Brand"],
@@ -65,7 +65,7 @@ const nonItCourses = [
 const itCourses = [
   {
     id: "mern-dev",
-    title: "MERN Stack Development",
+    title: "MERN/MEAN Stack Development",
     short:
       "Build full-stack apps with MongoDB, Express, React and Node using product-focused briefs.",
     tags: ["JS", "React"],
@@ -159,7 +159,7 @@ export default function CoursesPage() {
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 text-center">
         <div className="max-w-3xl mx-auto">
-          <span className="inline-block bg-[#48F4DC] text-[14px] px-3 py-1 rounded-full text-black">
+          <span className="inline-block bg-[#2fdfc7] text-[14px] px-3 py-1 rounded-full text-black">
             Courses
           </span>
 
@@ -247,7 +247,7 @@ export default function CoursesPage() {
                     {c.tags.map((t) => (
                       <span
                         key={t}
-                        className="bg-[#48F4DC] text-black text-xs px-2 py-1 rounded-full font-medium"
+                        className="bg-[#2fdfc7] text-black text-xs px-2 py-1 rounded-full font-medium"
                       >
                         {t}
                       </span>
@@ -308,7 +308,7 @@ export default function CoursesPage() {
                   {c.tags.map((t) => (
                     <span
                       key={t}
-                      className="bg-[#48F4DC] text-black text-xs px-2 py-1 rounded-full font-medium"
+                      className="bg-[#2fdfc7] text-black text-xs px-2 py-1 rounded-full font-medium"
                     >
                       {t}
                     </span>
@@ -353,7 +353,7 @@ export default function CoursesPage() {
                   {c.tags.map((t) => (
                     <span
                       key={t}
-                      className="bg-[#48F4DC] text-black text-xs px-2 py-1 rounded-full font-medium"
+                      className="bg-[#2fdfc7] text-black text-xs px-2 py-1 rounded-full font-medium"
                     >
                       {t}
                     </span>
@@ -369,7 +369,7 @@ export default function CoursesPage() {
       <section className="max-w-6xl mx-auto px-6 md:px-10 pb-28">
         <div className="bg-gray-100 rounded-[20px] p-6 md:p-8 flex flex-col lg:flex-row items-center gap-6">
           <div className="lg:flex-1">
-            <span className="inline-block bg-[#48F4DC] text-[14px] px-2.5 py-1 rounded-full font-medium text-black">
+            <span className="inline-block bg-[#2fdfc7] text-[14px] px-2.5 py-1 rounded-full font-medium text-black">
               Get in touch
             </span>
             <h2 className="mt-4 text-2xl font-semibold text-slate-900">

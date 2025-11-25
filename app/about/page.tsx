@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* LEFT */}
           <div className="lg:col-span-7">
-            <span className="inline-block bg-[#48F4DC] text-[14px] px-3 py-1 rounded-full ">
+            <span className="inline-block bg-[#2fdfc7] text-[14px] px-3 py-1 rounded-full ">
               About us
             </span>
 
@@ -68,7 +68,7 @@ export default function AboutPage() {
       <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 bg-gray-100 rounded-[36px] mb-20">
         <div className="flex justify-between items-start">
           <div>
-            <span className="inline-block bg-[#48F4DC] text-[14px] px-3 py-1 rounded-full">
+            <span className="inline-block bg-[#2fdfc7] text-[14px] px-3 py-1 rounded-full">
               About AV Acadey
             </span>
 
@@ -127,7 +127,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="bg-[#48F4DC] rounded-[28px] p-8 shadow-sm md:col-span-4 flex flex-col justify-between">
+          <div className="bg-[#2fdfc7] rounded-[28px] p-8 shadow-sm md:col-span-4 flex flex-col justify-between">
             <div>
               <h3 className="text-6xl font-semibold text-slate-900">50+</h3>
               <p className="mt-10 text-base font-medium text-slate-900">
@@ -155,7 +155,7 @@ export default function AboutPage() {
       {/* TEAM SECTION */}
       {/* -------------------------------------------------- */}
       <section id="team" className="max-w-7xl mx-auto px-6 md:px-10 py-20">
-        <span className="inline-block bg-[#48F4DC] text-[14px] px-3 py-1 rounded-full font-medium">
+        <span className="inline-block bg-[#2fdfc7] text-[14px] px-3 py-1 rounded-full font-medium">
           Meet Your Mentors
         </span>
 
@@ -165,7 +165,7 @@ export default function AboutPage() {
         </p>
 
         {/* TEAM GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
           {[
             {
               name: "Virendra Singh",
@@ -196,8 +196,8 @@ export default function AboutPage() {
               role: "Graphic Designer",
               bio: "Designs brand visuals, creative assets, and supports students with design critiques.",
               image: "/dheeraj.png",
-              linkedin: "https://www.linkedin.com/in/dheeraj-chauhan-4a74a8239/",
-              portfolio: "https://behance.net/dheeraj",
+              linkedin:
+                "https://www.linkedin.com/in/dheeraj-chauhan-4a74a8239/",
             },
             {
               name: "Arush Singh",
@@ -207,23 +207,15 @@ export default function AboutPage() {
               linkedin: "https://www.linkedin.com/in/arushsingh03",
               portfolio: "https://www.dev-arush.info",
             },
-            {
-              name: "Chinkita",
-              role: "Social Media Strategist",
-              bio: "Crafts social media plans, content strategies, and digital presence for AV Academy.",
-              image: "/chinkita.png",
-              // linkedin: "https://www.linkedin.com/in/rahul-verma-engineer/",
-              // portfolio: "https://rahulverma.dev",
-            },
           ].map((member, index) => {
             const isMintBackground = index % 2 === 1;
             return (
               <div
                 key={member.name}
-                className="bg-white border p-4 rounded-2xl shadow-sm"
+                className="bg-white border rounded-2xl shadow-sm p-6 flex flex-col h-full"
               >
                 <div
-                  className={`h-56 rounded-xl overflow-hidden mb-4 ${
+                  className={`h-56 rounded-xl overflow-hidden mb-5 ${
                     isMintBackground ? "bg-[#49F4E5]" : "bg-gray-200"
                   }`}
                 >
@@ -236,34 +228,42 @@ export default function AboutPage() {
                   />
                 </div>
 
-                <h3 className="font-semibold text-slate-900">{member.name}</h3>
-                <p className="text-sm text-slate-600">{member.role}</p>
+                <div className="flex flex-col flex-1">
+                  <div>
+                    <h3 className="font-semibold text-slate-900">
+                      {member.name}
+                    </h3>
+                    <p className="text-sm text-slate-600">{member.role}</p>
+                  </div>
 
-                <p className="text-xs text-slate-500 mt-3 mb-4">{member.bio}</p>
+                  <p className="text-xs text-slate-500 mt-3 mb-4 flex-1">
+                    {member.bio}
+                  </p>
 
-                <div className="flex gap-2">
-                  {member.linkedin && (
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="bg-[#48F4DC] p-1.5 rounded-full hover:bg-[#33d6c1] transition"
-                      aria-label={`${member.name} on LinkedIn`}
-                    >
-                      <LinkedInIcon />
-                    </a>
-                  )}
-                  {member.portfolio && (
-                    <a
-                      href={member.portfolio}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="bg-[#48F4DC] p-1.5 rounded-full hover:bg-[#33d6c1] transition"
-                      aria-label={`${member.name} portfolio`}
-                    >
-                      <AssignmentIndIcon />
-                    </a>
-                  )}
+                  <div className="mt-auto flex gap-2">
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="bg-[#2fdfc7] p-1.5 rounded-full hover:bg-[#33d6c1] transition"
+                        aria-label={`${member.name} on LinkedIn`}
+                      >
+                        <LinkedInIcon />
+                      </a>
+                    )}
+                    {member.portfolio && (
+                      <a
+                        href={member.portfolio}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="bg-[#2fdfc7] p-1.5 rounded-full hover:bg-[#33d6c1] transition"
+                        aria-label={`${member.name} portfolio`}
+                      >
+                        <AssignmentIndIcon />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             );
@@ -277,7 +277,7 @@ export default function AboutPage() {
       <section className="max-w-7xl mx-auto px-6 md:px-10 py-16 bg-gray-50 rounded-2xl">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-10">
           <div>
-            <span className="inline-block bg-[#48F4DC] text-[14px] px-3 py-1 rounded-full font-medium">
+            <span className="inline-block bg-[#2fdfc7] text-[14px] px-3 py-1 rounded-full font-medium">
               Why AV Academy
             </span>
 
@@ -387,7 +387,7 @@ export default function AboutPage() {
         <div className="grid lg:grid-cols-2 gap-10 items-center bg-gray-100 p-8 md:p-10 rounded-2xl">
           {/* LEFT */}
           <div>
-            <span className="inline-block bg-[#48F4DC] text-[14px] px-3 py-1 rounded-full font-medium">
+            <span className="inline-block bg-[#2fdfc7] text-[14px] px-3 py-1 rounded-full font-medium">
               Get in touch
             </span>
 
@@ -431,7 +431,7 @@ export default function AboutPage() {
             <div className="mt-6 flex flex-wrap items-center gap-4 text-xs text-slate-600">
               <div className="inline-flex items-center gap-2">
                 <svg
-                  className="w-4 h-4 text-[#48F4DC]"
+                  className="w-4 h-4 text-[#2fdfc7]"
                   viewBox="0 0 24 24"
                   fill="none"
                   aria-hidden
@@ -449,7 +449,7 @@ export default function AboutPage() {
 
               <div className="inline-flex items-center gap-2">
                 <svg
-                  className="w-4 h-4 text-[#48F4DC]"
+                  className="w-4 h-4 text-[#2fdfc7]"
                   viewBox="0 0 24 24"
                   fill="none"
                   aria-hidden

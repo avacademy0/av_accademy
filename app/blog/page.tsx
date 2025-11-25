@@ -14,7 +14,7 @@ export default async function BlogPage() {
       <Navbar />
       {/* Hero — using PageTemplate pattern for metadata and consistent header */}
       <header className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-20 text-center">
-        <span className="inline-block bg-[#48F4DC] text-[14px] px-4 py-1 rounded-full font-medium text-black">
+        <span className="inline-block bg-[#2fdfc7] text-[14px] px-4 py-1 rounded-full font-medium text-black">
           Blogs
         </span>
 

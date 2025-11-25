@@ -64,7 +64,7 @@ function ServicesAccordion() {
   return (
     <section className="max-w-6xl mx-auto px-6 md:px-10 py-12">
       <div className="bg-gray-100 rounded-[20px] p-8 md:p-10">
-        <span className="inline-block bg-[#48F4DC] text-[14px] px-2.5 py-1 rounded-full font-medium mb-4">
+        <span className="inline-block bg-[#2fdfc7] text-[14px] px-2.5 py-1 rounded-full font-medium mb-4">
           What we do
         </span>
 
@@ -90,7 +90,7 @@ function ServicesAccordion() {
                     {s.title}
                   </span>
 
-                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#48F4DC] text-black">
+                  <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#2fdfc7] text-black">
                     <Plus size={14} />
                   </span>
                 </button>
@@ -105,7 +105,7 @@ function ServicesAccordion() {
                     <button
                       onClick={() => setOpenIndex(null)}
                       aria-label="Close"
-                      className="absolute right-4 top-4 inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#48F4DC] text-black"
+                      className="absolute right-4 top-4 inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#2fdfc7] text-black"
                     >
                       <X size={14} />
                     </button>
@@ -213,7 +213,7 @@ function CompanySnapshot() {
     <section className="max-w-7xl mx-auto px-6 md:px-10 py-10">
       <div className="flex items-start justify-between mb-6">
         <div>
-          <span className="inline-block bg-[#48F4DC] text-[14px] px-2.5 py-[4px] rounded-full font-medium text-black">
+          <span className="inline-block bg-[#2fdfc7] text-[14px] px-2.5 py-1 rounded-full font-medium text-black">
             Some stats
           </span>
           <h2 className="text-3xl font-semibold mt-4">Our company snapshot</h2>
@@ -237,7 +237,7 @@ function CompanySnapshot() {
             <div
               key={idx}
               className={`rounded-2xl p-6 h-full ${
-                isLime ? "bg-[#48F4DC] text-black" : "bg-black text-white"
+                isLime ? "bg-[#40e6cf] text-black" : "bg-black text-white"
               }`}
             >
               <div className="text-4xl md:text-5xl font-bold">{t.value}</div>
@@ -268,7 +268,7 @@ export default function ServicesPage() {
       <section className="max-w-7xl mx-auto px-6 md:px-10 py-12 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7">
-            <span className="inline-block bg-[#48F4DC] text-[14px] px-2.5 py-1 rounded-full text-black">
+            <span className="inline-block bg-[#2fdfc7] text-[14px] px-2.5 py-1 rounded-full text-black">
               Our services
             </span>
 

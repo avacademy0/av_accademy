@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section id="home" className="space-y-10 text-center">
       <div className="space-y-6">
-        <span className="inline-flex items-center justify-center rounded-full bg-[#48F4DC] px-6 py-2 text-slate-900 text-sm">
+        <span className="inline-flex items-center justify-center rounded-full bg-[#2fdfc7] px-6 py-2 text-slate-900 text-sm">
           Welcome to AV Academy!
         </span>
 

@@ -163,7 +163,7 @@ export function Navbar({ className }: { className?: string }) {
         {/* RIGHT: CTA BUTTONS – moved right using ml-auto */}
         <div className="hidden items-center gap-3 lg:flex ml-auto">
           <a
-            href="/courses"
+            href="/enroll"
             className="rounded-full border border-slate-900 px-5 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
           >
             Join Now
@@ -195,7 +195,7 @@ export function Navbar({ className }: { className?: string }) {
 
           <div className="mt-5 flex flex-col gap-3">
             <a
-              href="/courses"
+              href="/enroll"
               className="rounded-full border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900"
             >
               Join Now

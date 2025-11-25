@@ -38,7 +38,7 @@ export default function WorkSection() {
         {/* Heading */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-10 gap-6">
           <div>
-            <span className="inline-block bg-[#48F4DC] text-[14px] px-3 py-1 rounded-full font-medium text-black mb-3">
+            <span className="inline-block bg-[#2fdfc7] text-[14px] px-3 py-1 rounded-full font-medium text-black mb-3">
               Case Studies
             </span>
             <h2 className="text-3xl md:text-4xl text-gray-900">
@@ -99,7 +99,7 @@ export default function WorkSection() {
                 {item.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="bg-[#48F4DC] text-black text-xs px-3 py-1 rounded-full font-medium"
+                    className="bg-[#2fdfc7] text-black text-xs px-3 py-1 rounded-full font-medium"
                   >
                     {tag}
                   </span>
@@ -147,7 +147,7 @@ export default function WorkSection() {
               <p className="text-gray-700 mb-4">{workData[activeIndex].description}</p>
               <div className="flex flex-wrap gap-2">
                 {workData[activeIndex].tags.map((t, i) => (
-                  <span key={i} className="bg-[#48F4DC] text-black text-xs px-3 py-1 rounded-full font-medium">
+                  <span key={i} className="bg-[#2fdfc7] text-black text-xs px-3 py-1 rounded-full font-medium">
                     {t}
                   </span>
                 ))}

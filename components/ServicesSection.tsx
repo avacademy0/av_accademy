@@ -6,7 +6,7 @@ import { Plus, X } from "lucide-react";
 
 const services = [
   {
-    title: "Social & Performance",
+    title: "Brand Building & Promotion",
     description:
       "Always-on growth strategy, channel ops, and paid media to amplify launches and cohorts.",
     points: [
@@ -18,7 +18,7 @@ const services = [
       "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Design & Product",
+    title: "Product Design & Web Solutions",
     description:
       "Product strategy, UI/UX, and interactive prototypes for web platforms and mobile experiences.",
     points: ["Design systems", "Web + app builds", "No-code handoff"],
@@ -26,7 +26,7 @@ const services = [
       "https://images.unsplash.com/photo-1600869009498-8d429f88d4f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Post, Motion & VFX",
+    title: "2D-3D, AR/VR Immersive Experience",
     description:
       "Edit lab, compositing, color, and finishing suites that ship narrative work for founders and brands.",
     points: ["Edit + grade", "3D/2D animation", "On-set supervision"],
@@ -43,7 +43,7 @@ export default function ServicesAccordion() {
       {/* Header */}
       <div className="mb-8 flex items-center justify-between gap-4">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-slate-900 bg-[#48F4DC] px-2 py-[4px] rounded-full inline-block">
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-900 bg-[#2fdfc7] px-2 py-[4px] rounded-full inline-block">
             What we do
           </p>
 
@@ -80,7 +80,7 @@ export default function ServicesAccordion() {
                   {s.title}
                 </span>
 
-                <span className="ml-4 inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#48F4DC] text-black">
+                <span className="ml-4 inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#2fdfc7] text-black">
                   <Plus size={14} />
                 </span>
               </button>
@@ -96,7 +96,7 @@ export default function ServicesAccordion() {
                   <button
                     onClick={() => setOpenIndex(null)}
                     aria-label="Close"
-                    className="absolute right-4 top-4 inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#48F4DC] text-black shadow-sm"
+                    className="absolute right-4 top-4 inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#2fdfc7] text-black shadow-sm"
                   >
                     <X size={14} />
                   </button>

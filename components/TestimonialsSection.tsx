@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
     <section className="bg-white/90 rounded-2xl p-8 md:p-12 lg:p-16">
       <div className="w-full mx-auto max-w-7xl">
         <div className="flex flex-col items-center gap-4 mb-8 text-center">
-          <span className="inline-block bg-[#48F4DC] text-[14px] md:text-xs px-3 py-1 rounded-full font-medium text-black">
+          <span className="inline-block bg-[#2fdfc7] text-[14px] md:text-xs px-3 py-1 rounded-full font-medium text-black">
             Testimonials
           </span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-900">
@@ -64,7 +64,7 @@ export default function TestimonialsSection() {
                     />
                   </div>
                 ) : (
-                  <div className="w-12 h-12 rounded-full bg-[#48F4DC] inline-flex items-center justify-center text-black font-semibold">
+                  <div className="w-12 h-12 rounded-full bg-[#2fdfc7] inline-flex items-center justify-center text-black font-semibold">
                     {t.name
                       .split(" ")
                       .map((n) => n[0])
@@ -86,7 +86,7 @@ export default function TestimonialsSection() {
                       <Star
                         key={idx}
                         size={14}
-                        className="text-[#48F4DC] stroke-[2px]"
+                        className="text-[#2fdfc7] stroke-[2px]"
                       />
                     ))}
                   </div>

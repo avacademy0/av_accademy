@@ -101,8 +101,8 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* LEFT: copy + small contact items */}
           <div className="lg:col-span-7">
-            <span className="inline-block bg-[#48F4DC] text-[14px] px-2.5 py-1 rounded-full font-medium text-black">
-              Get in touch
+            <span className="inline-block bg-[#2fdfc7] text-[14px] px-2.5 py-1 rounded-full font-medium text-black">
+              Get in touch 
             </span>
 
             <h1 className="mt-6 text-4xl md:text-5xl text-slate-900">
@@ -117,7 +117,7 @@ export default function ContactPage() {
 
             <ul className="mt-8 space-y-4 text-sm text-slate-700">
               <li className="flex items-start gap-3">
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#48F4DC]">
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#2fdfc7]">
                   <Mail size={16} className="text-black" />
                 </span>
                 <a
@@ -129,16 +129,17 @@ export default function ContactPage() {
               </li>
 
               <li className="flex items-start gap-3">
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#48F4DC]">
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#2fdfc7]">
                   <Phone size={16} className="text-black" />
                 </span>
                 <a href="tel:01234567890" className="hover:underline">
-                  +91 96759 03348
+                  +91 96759 03348 <br />
+                  +91 75002 06719
                 </a>
               </li>
 
               <li className="flex items-start gap-3">
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#48F4DC]">
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#2fdfc7]">
                   <MapPin size={16} className="text-black" />
                 </span>
                 <address className="not-italic">
@@ -154,14 +155,14 @@ export default function ContactPage() {
             <div
               className="rounded-[28px] p-6 md:p-8"
               // neon lime background similar to your screenshot
-              style={{ backgroundColor: "#48F4DC" }}
+              style={{ backgroundColor: "#2fdfc7" }}
             >
               {/* Form header area (optional small row of labels) */}
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <label className="block">
                     <span className="text-[14px] text-black/70 mb-2 inline-block">
-                      Name
+                      Name <span className="text-red-600">*</span>
                     </span>
                     <input
                       name="name"
@@ -176,7 +177,7 @@ export default function ContactPage() {
 
                   <label className="block">
                     <span className="text-[14px] text-black/70 mb-2 inline-block">
-                      Email
+                      Email <span className="text-red-600">*</span>
                     </span>
                     <input
                       name="email"
@@ -193,7 +194,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <label className="block">
                     <span className="text-[14px] text-black/70 mb-2 inline-block">
-                      Phone
+                      Phone <span className="text-red-600">*</span>
                     </span>
                     <input
                       name="phone"
@@ -207,7 +208,7 @@ export default function ContactPage() {
 
                   <label className="block">
                     <span className="text-[14px] text-black/70 mb-2 inline-block">
-                      Address
+                      Address <span className="text-red-600">*</span>
                     </span>
                     <input
                       name="address"
@@ -223,7 +224,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <label className="block">
                     <span className="text-[14px] text-black/70 mb-2 inline-block">
-                      Course
+                      Course <span className="text-red-600">*</span>
                     </span>
                     <Select
                       onValueChange={(value) =>
@@ -237,67 +238,67 @@ export default function ContactPage() {
                       <SelectContent side="bottom">
                         <SelectItem
                           value="Artificial Intelligence"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           1. Artificial Intelligence
                         </SelectItem>
                         <SelectItem
                           value="Digital Marketing"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           2. Digital Marketing
                         </SelectItem>
                         <SelectItem
                           value="Graphic Design"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           3. Graphic Design
                         </SelectItem>
                         <SelectItem
                           value="3D Animation"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           4. 3D Animation
                         </SelectItem>
                         <SelectItem
                           value="Video Editing"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           5. Video Editing
                         </SelectItem>
                         <SelectItem
                           value="VFX"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           6. VFX
                         </SelectItem>
                         <SelectItem
                           value="Full Stack Development"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           7. Full Stack
                         </SelectItem>
                         <SelectItem
                           value="MERN Stack Development"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           8. MERN Stack
                         </SelectItem>
                         <SelectItem
                           value="MEAN Stack Development"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           9. MEAN Stack
                         </SelectItem>
                         <SelectItem
                           value="Data Science"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           10. Data Science
                         </SelectItem>
                         <SelectItem
                           value="Data Analytics"
-                          className="cursor-pointer hover:bg-[#48F4DC]/30"
+                          className="cursor-pointer hover:bg-[#2fdfc7]/30"
                         >
                           11. Data Analytics
                         </SelectItem>
@@ -357,7 +358,7 @@ export default function ContactPage() {
                     key={pointIndex}
                     className="flex items-start gap-3 text-sm text-slate-600"
                   >
-                    <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#48F4DC] text-black text-xs font-semibold mt-0.5 shrink-0">
+                    <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#2fdfc7] text-black text-xs font-semibold mt-0.5 shrink-0">
                       {pointIndex + 1}
                     </span>
                     <span>{point}</span>
